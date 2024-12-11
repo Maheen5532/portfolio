@@ -1,0 +1,73 @@
+@media (max-width: 321px){
+    .section_skills {
+        width: 150px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+    .home{
+        font-size: 0.5rem;
+    }
+    .header-text p {
+        font-size: 15px !important;
+    }
+    .logo-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+/* Styles for larger screens */
+@media (max-width: 768px) {
+    .section_skills {
+        width: 650px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+    .home{
+        font-size: medium;
+    }
+
+    .skill {
+        flex: 1 1 80%; /* Make skills take up more width on mobile */
+        margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+}
+
+/* Styles for smaller screens */
+
+@media (max-width: 480px) {
+    .section_skills {
+        width: 300px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+    .home{
+        font-size: small;
+    }
+
+    .skill {
+        flex: 1 1 100%; /* Make skills take up full width on mobile */
+        margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+    
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* Base styles for the skills section */
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.skill {
+    flex: 1 1 30%; /* Default size for larger screens */
+    margin: 10px;
+    text-align: center;
+}
